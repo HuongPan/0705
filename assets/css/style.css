@@ -1,0 +1,410 @@
+/* ===============================================================================
+   TABLE OF CONTENT
+   ===============================================================================
+   1. Reset CSS
+   2. Header
+   3. service
+   4. numsber
+   5. unsplash
+   6. customer
+*/
+
+/* ====1. Reset CSS===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nunito sans,sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.al-center{
+    align-items: center;
+}
+/* ====2. Header===== */
+.header {
+    padding: 3rem 3rem;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    color: white;
+}
+.header__menu svg {
+    fill: white;
+}
+/* menu-fix */
+.menu-fix{
+    position: fixed;
+    right: 1rem;
+    top: 20%;
+    z-index: 10;
+}
+.menu-fix>ul>li {
+    padding: 1.3rem;
+    background-color: white;
+}
+.menu-fix>ul>li>a>img {
+    width: 4rem;
+    height: auto;
+}
+.menu-fix>ul {
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.08);
+}
+/* ====3. Banner===== */
+.banner{
+    height: 100vh;
+    background-image: url(../img/Rectangle-1-copy-3.jpg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    padding-top: 65px;
+}
+
+h1.banner__title {
+    font-family: Montserrat;
+    line-height: 9rem;
+    font-weight: 700;
+    font-size: 7rem;
+    border-color: rgb(156, 154, 177);
+    color: rgb(255, 255, 255);
+    max-width: 1010px;
+}
+
+span.color-yellow {
+    color: yellow;
+}
+
+.banner__text>p {
+    font-size: 2.7rem;
+    color: white;
+    line-height: 6rem;
+}
+.banner__text>span {
+    font-size: 2rem;
+    color: orange;
+    padding: 2.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3rem;
+}
+
+.service__title>p {
+    font-size: 18px;
+    font-weight: 500!important;
+    color: #6f7581;
+}
+
+.service__title>h2 {
+    font-size: 5rem;
+    font-weight: 700!important;
+    padding: 5rem 0;
+}
+
+span.service__button>p {
+    font-size: 16px;
+    line-height: 56px;
+    font-weight: 600;
+}
+span.service__button {
+    border: 2px solid blue;
+    display: inline-block;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+
+span.service__button {}
+
+.service__item>i {
+    font-size: 38px;
+    color: #2d1dff;
+}
+
+.service__item>h4 {
+    font-size: 18px;
+    font-weight: 600!important;
+    color: #524e86;
+    padding: 3rem 0;
+}
+
+.service__item>p , .unsplash__text>p, div.gallery__title > p{
+    font-family: "Montserrat";
+    color: #9c9ab1;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 3rem 0;
+}
+.service__right{
+    flex-wrap: wrap;
+    width: 100%;
+}
+.service {
+    padding: 7rem;
+}
+
+.service__item {
+    padding-bottom: 6rem;
+}
+.service__title {
+    padding-bottom: 5rem;
+}
+/* nums */
+.nums{
+    background-image: url(../img/daniel-korpai-8GDCzWrcE3M-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.nums__item {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem 0;
+}
+.nums__item>h3 {
+    font-size: 8rem;
+}
+
+.nums__item>p {
+    font-size: 18px;
+    line-height: 150%!important;
+    font-weight: 500!important;
+    padding: 2rem;
+}
+
+.nums__item>hr {
+    width: 4rem;
+    background: orangered;
+    border: none;
+    height: 3px;
+    display: inline-block;
+}
+.nums-box {
+    padding: 10rem 0;
+}
+/* unsplash */
+ul.unsplash__menu {
+    color: #403f52!important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+ul.unsplash__menu>li>i {
+    color: blue;
+    padding-right: 10px;
+}
+
+ul.unsplash__menu>li {
+    padding: 1rem 0;
+}
+.unsplash__text>h2,  div.gallery__title > h2 {
+    font-size: 5rem;
+    color: #403f52;
+}
+.unsplash__text {
+    padding: 0 3rem;
+}
+.unsplash-box {
+    padding: 7rem 0;
+}
+
+.unsplash {
+    padding: 5rem 0;
+}
+.unsplash__pic>img {
+    width: 100%;
+    border-radius: 5%;
+}
+/* gallery */
+.gallery__title {
+    text-align: center;
+}
+.gallery__item>img {
+    width: 100%;
+    padding: 3rem 0;
+}
+.gallery-box>ul {
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.gallery-box>ul>li {
+    padding: 0 1rem;
+}
+
+/* customer */
+.customer {
+    padding: 5rem 0;
+}
+.customer__item__left>i {
+    font-size: 22px;
+    color: #b9b4fd;
+}
+
+.customer__item__left>p {
+    font-size: 16px;
+    color: #403f52;
+    padding: 2rem 0;
+}
+
+.customer__item__left>h3 {
+    font-family: "Montserrat";
+    color: #403f52;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.customer__item__right>img {border-radius: 50%;max-width: 100%;min-height: 1px;height: auto;}
+
+.customer__item__left {
+    width: 60%;
+    padding-left: 3rem;
+}
+
+.customer__item__right {
+    width: 40%;
+    text-align: center;
+}
+
+.customer__item {
+    font-family: "Montserrat";
+    color: #9c9ab1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    background: #F9F9FF;
+    margin-bottom: 5rem;
+    padding: 2rem;
+    align-items: center;
+}
+/* footer */
+.footer{
+    background-image: url(../img/Rectangle-1-copy-9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.footer__logo>h2 {
+    font-size: 18px;
+    line-height: 160%!important;
+    font-weight: 400!important;
+    color: #ffffff;
+    padding: 3rem 0;
+    width: 80%;
+}
+
+ul.footer__icon {
+    font-size: 17px;
+}
+
+ul.footer__icon>li>a>i {
+    color: white;
+}
+
+ul.footer__icon>li {
+    padding-right: 2rem;
+}
+
+.footer__item>h2 {
+    font-size: 18px;
+    line-height: 160%!important;
+    font-weight: 600!important;
+    color: #ffffff;
+    padding-bottom: 2rem;
+}
+
+.footer__item>ul>li>a {
+    font-size: 16px;
+    line-height: 160%!important;
+    font-weight: 400!important;
+    color: #b8b6d3;
+}
+
+.footer__item {
+    padding: 2rem 1rem;
+}
+
+.footer__logo {
+    padding: 2rem 1rem;
+}
+.footer-box {
+    padding: 9rem 0;
+}
+/* footer__end */
+.footer__end{
+    padding: 3rem 0;
+    color: gray;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* =====responsive====== */
+@media(max-width:991px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:767px){
+    html{
+        font-size: 40%;
+    }
+    .service {
+        padding: 7rem 2rem;
+    }
+    .unsplash__text>h2, div.gallery__title > h2 {
+        font-size: 3.5rem;
+    }
+    .footer__logo>h2 {
+        width: 100%;
+    }
+    .footer__logo>h2 {
+        width: 100%;
+    }
+    .service__item {
+        padding: 3rem;
+        text-align: center;
+    }
+    .banner{
+        height: 90vh;
+    }
+}
+@media(max-width:575px){
+  
+    h1.banner__title{
+        font-size: 5rem;
+    line-height: 7rem;
+    }
+    .banner__text>p {
+        font-size: 20px;
+        line-height: 4rem;
+    }
+    .service__title>h2 {
+        font-size: 3rem;
+        padding: 5rem 0;
+    }
+    .customer__item{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .customer__item__left {
+        width: 100%;
+    }
+    .menu-fix {
+        display: none;
+    }
+    .banner{
+        height: 80vh;
+    }
+}
